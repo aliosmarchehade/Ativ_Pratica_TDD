@@ -15,4 +15,4 @@ class ValidadorSenha {
     }
 }
 
-module.exports = ValidadorSenha;
+module.exports = ValidadorSenha;    

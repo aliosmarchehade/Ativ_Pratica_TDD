@@ -8,4 +8,8 @@ describe('ValidadorSenha', () => {
         test('deve se rejeitar senha sem letra maiúscula', () => {
             expect(ValidadorSenha.validar('A1a@5678')).toBe(true);
         });
+
+        test('deve se rejeitar senha sem letra minúscula', () => {
+            expect(ValidadorSenha.validar('AB1@5678')).toBe(false);
+        });
     });
