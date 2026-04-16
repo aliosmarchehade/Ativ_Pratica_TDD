@@ -3,7 +3,8 @@ class ValidadorSenha {
     static validar(senha) {
         return this.temTamanhoMinimo(senha) &&
                this.temMaiuscula(senha) &&
-               this.temMinuscula(senha);
+               this.temMinuscula(senha) && 
+               this.temNumero(senha);
     }
 
     static temTamanhoMinimo(senha) {
@@ -17,6 +18,10 @@ class ValidadorSenha {
 
     static temMinuscula(senha){
         return /[a-z]/.test(senha);
+    }
+
+    static temNumero(senha){
+        return /[0-9]/.test(senha);
     }
 }
 
