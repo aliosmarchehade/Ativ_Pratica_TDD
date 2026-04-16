@@ -10,6 +10,6 @@ describe('ValidadorSenha', () => {
         });
 
         test('deve se rejeitar senha sem letra minúscula', () => {
-            expect(ValidadorSenha.validar('AB1@5678')).toBe(false);
+            expect(ValidadorSenha.validar('AA1@5678')).toBe(false);
         });
     });
