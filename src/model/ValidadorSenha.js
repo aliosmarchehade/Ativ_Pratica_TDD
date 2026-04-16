@@ -1,6 +1,8 @@
 class ValidadorSenha {
     static validar(senha) {
-        return senha.length >= 8;
+        const MIN_LENGTH = 8;
+        const possuiTamanhoMinimo = senha.length >= MIN_LENGTH;
+        return possuiTamanhoMinimo;
     }
 }
 
