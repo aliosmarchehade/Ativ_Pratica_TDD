@@ -12,4 +12,8 @@ describe('ValidadorSenha', () => {
         test('deve se rejeitar senha sem letra minúscula', () => {
             expect(ValidadorSenha.validar('AA1@5678')).toBe(false);
         });
+
+        test('deve se rejeitar senha sem número', () => {
+            expect(ValidadorSenha.validar('Acc@defg')).toBe(false);
+        });
     });
