@@ -20,4 +20,8 @@ describe('ValidadorSenha', () => {
         test('deve se rejeitar senha sem caractere especial', () => {
             expect(ValidadorSenha.validar('Abc12345')).toBe(false);
         });
+
+        test('deve se rejeitar senha com espaços', () => {
+            expect(ValidadorSenha.validar('Ab1@ 678')).toBe(false);
+        });
     });
